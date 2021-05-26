@@ -95,4 +95,11 @@ label {
   font-size: 20px;
   border-radius: 20px;
   text-align: center;
+  cursor: pointer;
+}
+.action_btn:hover {
+  background: white;
+  color: #032434;
+  border-color: #535e63;
+  transition: 0.5s ease-out;
 }
