@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'fmderanax';
+  src: url('fonts/fm_derana-webfont.woff2') format('woff2'),
+    url('fonts/fm_derana-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* font-family: 'fmderanax'; */
+}
+
+.main_container {
+  width: 100%;
+  height: 100vh;
+  background: #032434;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+  border: 2px solid #fff;
+  min-width: 350px;
+  font-family: 'fmderanax';
+  color: #fff;
+}
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+label {
+  display: inline-block;
+  width: 100px;
+  font-size: 28px;
+}
+.form_input {
+  display: inline-block;
+  width: 85%;
+  height: 50px;
+  background: none;
+  outline: none;
+  border: 2px solid #fff;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.submit_btn {
+  display: block;
+  margin: 40px auto 0px auto;
+  width: 100px;
+  font-family: 'fmderanax';
+  color: white;
+  font-size: 28px;
+  border-radius: 20px;
+}
+.submit_btn:hover {
+  background: white;
+  color: #032434;
+  border-color: #535e63;
+  transition: 0.5s ease-out;
+}
+.action_container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding: 50px 10px;
+  border: 2px solid #fff;
+  min-width: 350px;
+  font-family: 'fmderanax';
+  color: #fff;
+}
+.action_btn {
+  display: block;
+  background: none;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fff;
+  font-family: 'fmderanax';
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
