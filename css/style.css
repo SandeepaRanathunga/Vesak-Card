@@ -15,7 +15,6 @@
 
 .main_container {
   width: 100%;
-  height: 100vh;
   background: #032434;
   display: flex;
   flex-direction: column;
@@ -42,11 +41,12 @@
 label {
   display: inline-block;
   width: 100px;
-  font-size: 28px;
+  font-size: 23px;
+  font-weight: bold;
 }
 .form_input {
   display: inline-block;
-  width: 85%;
+  width: 88%;
   height: 50px;
   background: none;
   outline: none;
@@ -62,7 +62,7 @@ label {
   width: 100px;
   font-family: 'fmderanax';
   color: white;
-  font-size: 28px;
+  font-size: 25px;
   border-radius: 20px;
 }
 .submit_btn:hover {
@@ -102,4 +102,95 @@ label {
   color: #032434;
   border-color: #535e63;
   transition: 0.5s ease-out;
+}
+.hidden_field {
+  display: none;
+}
+
+.card_container {
+  display: flex;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .main_container {
+    height: 100vh;
+  }
+  .card_container {
+    flex-direction: row;
+  }
+}
+.card {
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  box-shadow: 1rem 2rem 3rem rgb(0 0 0 / 25%);
+}
+.card_back {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'fmderanax';
+  z-index: 1;
+}
+.front_back {
+  background: white;
+  display: none;
+}
+.card_front {
+  background: url('../images/img4.png');
+  z-index: 2;
+}
+/* .card_front:hover {
+  transform-origin: 0 50%;
+} */
+.card_front:hover {
+  transform: translateX(-100%) rotateY(180deg);
+  /* transition: all 1s 0.3s; */
+  transition: transform 0.5s;
+}
+.card_front::after {
+  background: white;
+  background-image: none;
+}
+
+.img {
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+.quote {
+  font-size: 22px;
+  font-weight: bold;
+}
+.header_qoute {
+  font-size: 26px;
+}
+.user {
+  margin-top: 10px;
+}
+#from,
+#to {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px dotted black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.user_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.user_input label {
+  width: 50px;
+  text-align: right;
 }
