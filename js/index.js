@@ -16,7 +16,7 @@ document.getElementById('link_copy').addEventListener('click', () => {
   const link = document.getElementById('link');
   link.style.display = 'block';
   link.select();
-  // link.setSelectionRange(0, 99999);
+  link.setSelectionRange(0, 99999);
   document.execCommand('copy');
   link.style.display = 'none';
   alert(link.value);
