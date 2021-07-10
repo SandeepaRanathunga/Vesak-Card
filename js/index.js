@@ -3,7 +3,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
   document.querySelector('.form_container').style.display = 'none';
   const sender = document.getElementById('sender').value;
   const receiver = document.getElementById('receiver').value;
-  const view_link = `http://127.0.0.1:5500/view_card.html?sender=${sender}&receiver=${receiver}`;
+  const view_link = `https://vesak-card.herokuapp.com/view_card.html?sender=${sender}&receiver=${receiver}`;
   document.getElementById('link').value = view_link;
   document.getElementById('show_card').href = view_link;
   document.getElementById(
